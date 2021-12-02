@@ -1,0 +1,30 @@
+/**
+* @author Antoine Godbout
+*/
+
+.entete {
+  background: $grisFonce;
+  color: $blancBleu;
+  &_image {
+    max-width: 93px;
+    margin: 4px 0 0 4px;
+  }
+  &_lien {
+    text-decoration: none;
+    color: $blancBleu;
+    transition: ease 0.2s;
+    &:hover, &:focus {
+      color: $jaune;
+      transition: ease 0.2s;
+    }
+  }
+  & p {
+    margin: 0;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}

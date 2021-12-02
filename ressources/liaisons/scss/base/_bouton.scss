@@ -1,0 +1,92 @@
+/**
+* @author Antoine Godbout
+*/
+.bouton {
+  &_navigation {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid $grisFonce;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    margin: 30px 0;
+    text-align: center;
+    line-height: 50px;
+    transition: ease 0.6s;
+    &:hover {
+      background: $grisFonce;
+      color: $blancBleu;
+      transition: ease 0.6s;
+    }
+  }
+  &_avancer {
+    background: $bleu;
+    color: $blancBleu;
+  }
+  &_retour {
+    background: $blancBleu;
+    color: $grisFonce;
+  }
+  &_soumettre {
+    background: $jaune;
+    color: $grisFonce;
+    margin-top: 30px;
+  }
+  // Boutons pour les montants de don
+  &_radio {
+    position: relative;
+    display: block;
+    width: 48%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    transition: ease 0.3s;
+    @media (min-width: $largeurGrille) {
+      width: 32%;
+    }
+    &Groupe{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    & input[type=radio] {
+      display: none;
+      &:checked + label{
+        background: $bleu;
+        color: $blancBleu;
+        transition: ease 0.3s;
+      }
+    }
+    & label{
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      border: 1px solid $grisFonce;
+      transition: ease 0.3s;
+      &:hover {
+        background: $jaune;
+        transition: ease 0.3s;
+      }
+    }
+    & input[type=text] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 99%;
+      height: 97%;
+      border-radius: 5px;
+      border: 1px solid $grisFonce;
+      background: $blancBleu;
+    }
+    &:last-of-type label:last-of-type{
+      display: none;
+      }
+    }
+  }

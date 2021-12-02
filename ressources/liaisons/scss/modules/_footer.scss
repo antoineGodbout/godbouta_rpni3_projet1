@@ -1,0 +1,12 @@
+/**
+* @author Antoine Godbout
+*/
+.footer {
+  background: $grisFonce;
+  color: $blancBleu;
+  text-align: center;
+  padding: 1em 0;
+  & p{
+    margin: 0;
+  }
+}

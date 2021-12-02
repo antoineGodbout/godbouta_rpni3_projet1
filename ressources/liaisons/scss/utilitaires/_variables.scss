@@ -1,0 +1,27 @@
+/**
+* @author Antoine Godbout
+*/
+
+/** Polices de caractères **/
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url(../fonts/NotoSans-Bold.ttf);
+}
+
+$fonteNotoSans : "Noto Sans", sans-serif;
+$fonteNotoBold : "Noto Sans Bold", sans-serif;
+
+/** Palette de couleurs **/
+
+/* Couleurs de base */
+$grisFonce: #24292D;
+$blancBleu: #E3EFF9;
+$jaune: #EFAB48;
+$bleu: #0063B3;
+
+/** Points de rupture **/
+$largeurGrille : 800px;

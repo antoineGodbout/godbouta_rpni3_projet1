@@ -1,0 +1,55 @@
+/**
+* @author Antoine Godbout
+*/
+
+/**** Typographie responsive ****/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fonteNotoSans;
+  @include fontSize(16px); /* 16px pour toutes les largeurs d'écran */
+  line-height: 1.375; /* facteur multiplicateur de la taille de la police 1.375x16=22 */
+  color: $grisFonce;
+}
+
+.titreNiveau1, .titreNiveau2, .titreNiveau3, .titreNiveau4 {
+  font-family: "Noto Sans Bold", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.titreNiveau1 {
+  @include fontSize(40px);
+  text-align: center;
+  margin-top: 80px;
+}
+.titreNiveau2 {
+  @include fontSize(30px);
+  text-align: center;
+  @media (min-width: $largeurGrille) {
+    text-align: left;
+  }
+}
+.titreNiveau3 {
+  @include fontSize(23px);
+  margin-top: 35px;
+}
+.titreNiveau4 {
+  @include fontSize(20px);
+}
+
+.gras {
+  font-family: $fonteNotoBold;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0;
+}
+.p_ligne{
+  display: inline-block;
+  width: calc(100% - 25px);
+  margin-left: 25px;
+}

@@ -1,0 +1,52 @@
+/**
+ * @author Antoine Godbout
+**/
+//Code récupéré et adapté à partir du projet OFF
+.menu {
+  @media (min-width: $largeurGrille) {
+    max-width: $largeurGrille;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__controle {
+    display: block;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    border: none;
+    background: none;
+    color: $blancBleu;
+    @include fontSize(40px);
+    min-width: 40px;
+    font-weight: bold;
+    transition: ease 0.4s;
+    &:hover,
+    &:active{
+      color: $jaune;
+      transition: ease 0.4s;
+    }
+    &:focus{
+      outline-offset: -5px;
+      outline: $jaune auto 5px;}
+  }
+  &__liste {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid $blancBleu;
+    &:last-of-type {
+      border-bottom: none;
+    }
+    &Item {
+      margin: 0 0 0 10px;
+      height: 40px;
+      line-height: 40px;
+      &--actuel a{
+        color: $jaune;
+      }
+    }
+  }
+}
+.menu--ferme .menu__liste {
+  display: none;
+}

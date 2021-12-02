@@ -1,0 +1,49 @@
+/**
+* @author Antoine Godbout
+*/
+.svg{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  &--CVV {
+    top: 15px;
+    left: 33px;
+    transition: ease 0.6s;
+    &:hover {
+      fill: $bleu;
+      transition: ease 0.6s;
+    }
+  }
+  &--Info{
+    top: 17px;
+    &Couleur {
+      fill: $grisFonce;
+    }
+  }
+  &_stepsleft{
+    display: block;
+    margin: 30px auto 0 auto;
+    height: 70px;
+  }
+  &--style1{
+    fill:$blancBleu;
+  }
+  &--style2{
+    fill:none;
+    stroke:$grisFonce;
+    stroke-width:6px;
+  }
+  &--style3{
+    fill:$grisFonce;
+  }
+  &--style4{
+    fill:$bleu;
+  }
+  &--style5{
+    fill:$blancBleu;
+    font-size:40px;
+    font-family:NotoSans-Bold, Noto Sans, sans-serif;
+    font-weight:700;
+  }
+}
